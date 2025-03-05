@@ -1,0 +1,30 @@
+TIPO ENLACE OSEA QUE LLEVA EL TITULO HACIA DONDE ME PIDE.
+<header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio">
+    <h2>Inicio</h2>
+    <p>Bienvenido a mi página web.</p>
+</section>
+<p>r </p>
+<p>r </p>
+<p>r </p>
+<p>r </p>
+<p>r </p>
+
+<section id="sobre-mi">
+    <h2>Sobre Mí</h2>
+    <p>Hola, me llamo Juan y esta es mi web.</p>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme en mi correo: ejemplo@email.com</p>
+</section>
