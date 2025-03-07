@@ -14,13 +14,13 @@
     right: 0;
     width: 250px;
     height: 100%;
-    background-color: #444;
-    background: linear-gradient(to bottom,  #094601,#2f4727);
+    background-color: #1b6804;
+    
     padding-top: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     opacity: 0; /* Inicialmente opaco */
     pointer-events: none; /* No interactúa cuando está oculto */
-    transition: opacity 0.3s ease, pointer-events 0s 0.3s; /* Transición suave */
+    transition: opacity 0.3s ease, pointer-events 0s 0.1s; /* Transición suave */
 }
 
 
@@ -46,7 +46,8 @@
 }
 
 #side-menu ul li a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  
     text-decoration: none;
     display: block;
     border-radius: 2px; /* Botón con bordes redondeados */
@@ -81,12 +82,7 @@ header {
    
    
 }
-.header-img {
-    width: 150px; /* Ajusta el tamaño de la imagen según lo desees */
-    height: auto; /* Mantiene la proporción */
-    float: right; /* Alinea la imagen a la izquierda */
-    margin-right: 15px; /* Agrega espacio entre la imagen y el contenido de texto */
-}
+
 
 
 nav {
@@ -94,7 +90,7 @@ nav {
     top: 80px; /* Desplazado debajo del header */
     right: 0;
     width: 20px;
-    background-color: #333;
+    background-color: #f13f2c;
     padding: 10px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     border-radius: 15px; /* Botón con bordes redondeados */
@@ -117,17 +113,18 @@ nav ul li a {
    
     border-radius: 25px; /* Botón con bordes redondeados */
     transition: background-color 0.3s;
-    background-color: #13913d; /
+    background-color: #228505; /
 }
 
 nav ul li a:hover {
-    background-color: #60dd4f;
+    background-color:  #13913d;;
 }
 
 
 main {
-      margin-left: 220px; 
-      margin-right: 250px;
+    
+     
+      margin-right: 25px;
     margin-left: 220px; /* Deja espacio para el menú lateral */
     padding: 20px;
     margin-top: 100px; /* Para que no se solape con la barra superior */
@@ -154,24 +151,25 @@ header, nav {
     z-index: 1000;
 }
 
-main {
-    margin-top: 80px;
-}
+
 /* Estilo para el botón de menú */
 .menu-btn {
     display: inline-block;
     background-color: #228505; /* Fondo oscuro */
     color: white; /* Texto blanco */
-    padding: 10px 20px;
+    padding: 10px 20px; /*El primero es para el ancho del boton y el otro el largo */
     font-size: 18px;
     font-family: 'Arial', sans-serif; /* Cambia la fuente si deseas otra */
 
     border-radius: 25px; /* Botón con bordes redondeados */
     text-decoration: none; /* Elimina el subrayado del enlace */
     position: absolute;
-    top: 20px; /* Lo ponemos en la parte superior */
+    top: 30px; /* Lo ponemos en la parte superior */
     left: 20px; /* Lo ponemos a la izquierda */
     transition: background-color 0.3s; /* Para un efecto suave al pasar el ratón */
+}
+.menu-btn:hover {
+    background-color: #13913d; /* Cambia a un color más claro */
 }
 .hola-link {
     display: inline-block;
@@ -183,67 +181,79 @@ main {
     border-radius: 5px;
     text-decoration: none; /* Elimina el subrayado del enlace */
     position: absolute;
-    top: 20px; /* Lo ponemos en la parte superior */
-    left: 150px; /* Lo ponemos a la izquierda */
+    top: 30px; /* Lo ponemos en la parte superior */
+    left: 959px; /* Lo ponemos a la izquierda */
     transition: background-color 0.3s; /* Para un efecto suave al pasar el ratón */
 }
 .hola-link:hover  {  background-color: #13913d; /* Cambia a un color más claro */
 }
 /* Efecto al pasar el ratón por encima */
-.menu-btn:hover {
-    background-color: #13913d; /* Cambia a un color más claro */
+.coti {
+    display: inline-block;
+    background-color: #228505; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si deseas otra */
+    border-radius: 5px;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    position: absolute;
+    top: 30px; /* Lo ponemos en la parte superior */
+    left: 320px; /* Lo ponemos a la izquierda */
+    transition: background-color 0.3s; /* Para un efecto suave al pasar el ratón */
 }
-.right-sidebar {
-    background-color: #f5aae2;
-    margin-top: 8px;
-    width: 250px; /* Ajusté un poco el ancho */
-    position: fixed;
-    top: 80px;
-    left: 0;
-    padding: 20px;
-    z-index: 999;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
-    height: calc(100% - 80px);
+.coti:hover  {  background-color: #13913d; /* Cambia a un color más claro */
 }
 
 
+
 .right-sidebar {
-    background-color: #f5aae2;
+   
     margin-top: 8px;
     width: 250px; /* Ajusté un poco el ancho */
     position: absolute; /* Cambié fixed por absolute */
     top: 80px;
+    min-height: 100vh; /* Cambié height por min-height */
+    
     left: 0;
     padding: 20px;
     z-index: 999;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
-    height: calc(100% - 80px);
+   
 }
 
+
 .hotel {
+    margin-top: 80px;
     margin-bottom: 20px;
     background-color: #fff;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .hotel h4 {
     font-size: 18px;
-    color: #444;
+    color: #000000;
 }
 
-.hotel-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
-}
+
 
 .hotel p {
     font-size: 14px;
     color: #555;
     margin: 10px 0;
+   
+}
+.right-sidebar h3 {
+    margin-top: 0;
+    color: #000000;
+}
+
+.right-sidebar p {
+    font-size: 14px;
+    color: #555;
 }
 
 .view-btn {
@@ -255,23 +265,16 @@ main {
     cursor: pointer;
     border-radius: 5px;
     text-decoration: none;
+    margin-top: 4px;
 }
 
 .view-btn:hover {
     background-color: #45a049;
-}
+}/*AQUI TERMINA EL LATERAL*/
 
 
-/* Estilo para la barra lateral */
-.right-sidebar h3 {
-    margin-top: 0;
-    color: #333;
-}
 
-.right-sidebar p {
-    font-size: 14px;
-    color: #555;
-}
+
 .cookie-modal {
     display: block; /* Se muestra cuando la página carga */
     position: fixed;
@@ -312,9 +315,11 @@ main {
 .reject-btn {
     background-color: black;
 }
-#somos,#region-metropolitana,#region-noroccidente, #region-central,#region-verapaz,#region-sur-occidente,#contactanos {
+#somos,#inicio,#region-metropolitana,#region-noroccidente, #region-central,#region-verapaz,#region-sur-occidente,#contactanos {
     margin: 20px;
 }
+
+
 
 h2 {
     text-align: center;
@@ -322,6 +327,14 @@ h2 {
     color: #000000;
     
 }
+h3 {
+    color: #000000;
+    text-align: center;
+    font-size: 2rem;
+    
+    
+}
+
 
 p {
     font-size: 1rem;
@@ -334,6 +347,7 @@ p {
     color: #f13f2c;
     text-align: left;
     margin-top: 20px;
+    margin: 20px;
 }
 
 .info {
@@ -366,7 +380,8 @@ p {
     width: 150px; /* Ajusta el tamaño de la imagen según lo desees */
     height: auto; /* Mantiene la proporción */
     float: left; /* Alinea la imagen a la izquierda */
-    margin-right: 60px; /* Agrega espacio entre la imagen y el contenido de texto */
+    margin-right: 70px; /* Agrega espacio entre la imagen y el contenido de texto */
+    margin-left: 70px;
 }
 
 form {
@@ -397,3 +412,96 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.btn-maps {
+    display: block; /* obliga a que el boton este abajo de la imagen*/
+    background-color: #ff5722; /* Color naranja */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-maps:hover {
+    background-color: #e64a19; /* Color más oscuro al pasar el mouse */
+}
+.marquesina {
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+    display: block; /* Se asegura de que el elemento se comporte como un bloque */
+    width: 150%; /* Ocupa todo el ancho disponible */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    background: #000000; /* Color de fondo negro */
+    color: white; /* Color del texto en blanco */
+    padding: 10px; /* Espaciado interno alrededor del texto */
+    position: relative; /* Permite mover la marquesina dentro de su contenedor */
+}
+.boton-descarga {
+    display: inline-block;
+    background: #b40303; /* Color de fondo negro */
+    color: white; /* Texto en blanco */
+    font-size: 18px;
+    top: 15px; /* Lo ponemos en la parte superior */
+    padding: 10px 20px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-descarga:hover {
+    background: #d63c3c; /* Cambia a gris oscuro cuando se pasa el mouse */
+}
+.imagenes {
+    display: flex;
+    margin: 0 auto; /* Centra el contenedor */
+    gap: 20px; /* Ajusta la separación entre imágenes */
+    justify-content: center; /* Centra horizontalmente */
+  
+}
+.logo {
+    position: absolute; /* Fijar la imagen en un punto específico */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Coloca la imagen en el extremo derecho */
+    width: 80px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+}
+
+/*CONTADOR DE VISITAS*/
+.counter {
+    margin-top: 20px;
+  }
+  .count-display {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff6347;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+      padding: 15px;
+    }
+  }
+  
+  /* Estilo para pantallas pequeñas (teléfonos móviles) */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  }
