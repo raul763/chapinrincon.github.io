@@ -19,11 +19,13 @@
     <!-- Barra superior fija -->
     <header>
         <h1>Rincones Chapines</h1>
-            <p class="eslog"> "Un paraíso por descubrir, una aventura por vivir."</p>
-     
+        <p class="eslog"> "Un paraíso por descubrir, una aventura por vivir."</p>
         
-        <a href="javascript:void(0);" class="menu-btn" onclick="toggleMenu()">Menú</a>
+        <a href="javascript:void(0);" class="menu-btn" onclick="toggleMenu()">Mostrar/Ocultar(Menú)</a>
         <a href="#contactanos" class="hola-link">Contáctanos</a> <!-- Nuevo enlace -->
+        <a href="#cotizaciones" class="coti">Cotizaciones</a> <!-- Nuevo enlace -->
+        <img src="https://us.123rf.com/450wm/zrzahid/zrzahid2407/zrzahid240705248/231928271-colorful-bird-gradient-logotype-vector-illustration.jpg?ver=6" 
+     alt="Logo" class="logo">
       
         
     </header>
@@ -53,24 +55,36 @@
         <center>
         <!-- Inicio -->
         <section id="inicio">
-            <h2>Bienvenidos a Rincones Chapines</h2>
-            
            
+            <h2>Bienvenidos a Rincones Chapines</h2>
             <p>Rincones Chapines es tu página de turismo ideal para descubrir las maravillas de Guatemala, explorando sus regiones llenas de belleza y tradición. Ya sea que busques relajarte en la naturaleza, recorrer impresionantes paisajes, sumergirte en la riqueza histórica de antiguas ciudades o disfrutar de la vibrante cultura y gastronomía local, aquí encontrarás los mejores destinos para cada gusto. Desde las playas del Pacífico hasta las montañas del altiplano, pasando por encantadores pueblos coloniales y exóticos rincones selváticos, te ofrecemos guías, recomendaciones y experiencias únicas para que vivas Guatemala al máximo.</p>
             
            
             <p><iframe width="560" height="315" src="https://www.youtube.com/embed/RoQTqMyi89g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
         </section>
 
-
+        
         <!-- Quiénes Somos -->
         <section id="somos">
             <h2>Playas</h2>
             <p>En Guatemala, las playas ofrecen hermosos paisajes, aguas cálidas y actividades acuáticas para disfrutar. Desde el Pacífico hasta el Caribe, aquí encontrarás el lugar perfecto para relajarte o aventurarte.</p>
             <h3 class="subtitulo">Playa de Champerico</h3>
             <p class="info">La Playa de Champerico es una de las más conocidas en la costa del Pacífico guatemalteco. Con su extenso litoral, es ideal para disfrutar del mar y practicar deportes acuáticos como el surf. Además, la playa está rodeada de hermosos paisajes naturales y es un excelente destino para aquellos que buscan escapar de la rutina.</p>
+            
+            <div class="imagenes">
+                
+                <img src="https://www.prensalibre.com/wp-content/uploads/2018/12/6f75e514-60fa-4661-afa3-d83a2653015f.jpg?quality=52" alt="Descripción" width="500" height="400"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Champerico_Retalhuleu%2C_Guatemala.jpg/640px-Champerico_Retalhuleu%2C_Guatemala.jpg" alt="Descripción" width="500" height="400"> 
+            </div>
+            <p>!Haz Click en el botón!</p>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/WxkfxkMyyXmX9aARA')">¿Cómo llegar?</button>
             <h3 class="subtitulo">Playa Blanca</h3>
             <p class="info">Playa Blanca se encuentra en la costa del Caribe de Guatemala. Sus aguas cristalinas y arenas blancas la convierten en un paraíso para los amantes de la naturaleza. Es un excelente lugar para nadar, hacer snorkel y relajarse bajo el sol.</p>
+            <div class="imagenes">
+                <img src="https://www.liberalgt.com/wp-content/uploads/2019/07/IMG_0135-RAW.jpg" alt="Descripción" width="500" height="400"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Playa_Blanca_Guatemala.jpg/640px-Playa_Blanca_Guatemala.jpg" alt="Descripción" width="500" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://www.google.com/maps?q=Playa+Blanca+Guatemala')">¿Cómo llegar?</button>
         </section>
         
         <!-- Región Metropolitana -->
@@ -78,9 +92,20 @@
             <h2>Volcanes</h2>
             <p>En Guatemala, los volcanes ofrecen impresionantes paisajes, senderos para explorar y vistas espectaculares para disfrutar. Desde el Pacífico hasta el Altiplano, aquí encontrarás el volcán perfecto para relajarte o aventurarte.</p>
             <h3 class="subtitulo">Volcán de Agua</h3>   
-            <p class="info">El Volcán de Agua, ubicado en el Altiplano, ofrece una de las vistas más espectaculares de la región. Con una altura de 3,760 metros, es ideal para los amantes del senderismo y la aventura.</p>
+            <p class="info">El Volcán de Agua, ubicado en el Altiplano, 
+                ofrece una de las vistas más espectaculares de la región. Con una altura de 3,760 metros, es ideal para los amantes del senderismo y la aventura.</p>
+                <div class="imagenes">
+                    <img src="https://www.ojoconmipisto.com/wp-content/uploads/2024/11/Incendio-en-volcan-de-Agua-1200x675.jpeg" alt="Descripción" width="500" height="400"> 
+                    <img src="https://www.guatevalley.com/photo/photo_a1/1460/cvg3RJtDWHVYHC5zj57Z.jpg" alt="Descripción" width="500" height="400"> 
+                </div>
+                <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/GASmbKT95weeDud8A')">¿Cómo llegar?</button>
             <h3 class="subtitulo">Volcán de Pacaya</h3>
             <p class="info">El Volcán de Pacaya es uno de los volcanes más activos de Guatemala. Sus erupciones periódicas lo convierten en un atractivo turístico único, donde los visitantes pueden disfrutar de caminatas hasta el cráter y observar flujos de lava.</p>
+            <div class="imagenes">
+                <img src="https://trekguatemala.com/wp-content/uploads/2016/11/Trek-Guatemala-Pacaya-Hike2.jpg" alt="Descripción" width="500" height="400"> 
+                <img src="https://www.alltrails.com/_next/image?url=https%3A%2F%2Fimages.alltrails.com%2FeyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNDU2MTA2NTUvMjA1NGQ0MmVjNzE5ZjQzNThiMzJiYThjZjU4Y2ViN2IuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0%3D&w=3840&q=75" alt="Descripción" width="500" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/eNAnJ3uqyoAiyNgXA')">¿Cómo llegar?</button>
         </section>
         
         <!-- Región Noroccidente -->
@@ -89,18 +114,39 @@
             <p>En Guatemala, los lagos y lagunas ofrecen paisajes tranquilos, aguas cristalinas y un ambiente perfecto para el descanso. Desde el Lago de Atitlán hasta las lagunas escondidas, aquí encontrarás el lugar ideal para relajarte o disfrutar de actividades al aire libre.</p>
             <h3 class="subtitulo">Lago de Atitlán</h3>   
             <p class="info">El Lago de Atitlán es uno de los lagos más bellos del mundo, rodeado por volcanes y pequeños pueblos indígenas. Es un destino ideal para quienes buscan actividades como el senderismo, paseos en bote y exploración cultural.</p>
+            <div class="imagenes">
+                <img src="https://eeao2nst5vu.exactdn.com/wp-content/uploads/2012/03/Lago-Atitlan-en-Guatemala.jpg?strip=all&lossy=1&ssl=1" alt="Descripción" width="500" height="400"> 
+                <img src="https://res.cloudinary.com/uvggt/image/upload/v1712764041/2024/04%20Abril/Encuentro%20Investigadores%20Atitl%C3%A1n/Encuentro-Investigadores-Atitlan_PORTADA.jpg" alt="Descripción" width="500" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/2QPQ8hXs5N8M9Wf79')">¿Cómo llegar?</button>
             <h3 class="subtitulo">Laguna de Lachuá</h3>   
             <p class="info">La Laguna de Lachuá, en Alta Verapaz, es un hermoso cuerpo de agua rodeado por selvas tropicales. Es un lugar perfecto para los amantes del ecoturismo, donde se puede disfrutar de caminatas, observación de aves y nadar en aguas cristalinas.</p>
+            <div class="imagenes">
+                <img src="https://aprende.guatemala.com/wp-content/uploads/2021/03/Reglamento-para-visitantes-del-Parque-Nacional-Laguna-Lachu%C3%A1-Alta-Verapaz-%40rodrigopopguatemala.jpg" alt="Descripción" width="500" height="400"> 
+                <img src="https://i.ytimg.com/vi/9EZ2-uDepBA/maxresdefault.jpg" alt="Descripción" width="500" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/7xGvBb9PrWACY7VJA')">¿Cómo llegar?</button>
         </section>
         
         <!-- Región Central -->
         <section id="region-central">
             <h2>Sitios Arqueológicos</h2>
             <p>En Guatemala, los sitios arqueológicos te transportan al pasado, con vestigios de antiguas civilizaciones mayas. Desde Tikal hasta Copán, estos lugares llenos de historia te permitirán explorar y descubrir la riqueza cultural de la región.</p>
+            
             <h3 class="subtitulo">Tikal</h3>   
             <p class="info">Tikal es uno de los sitios arqueológicos más grandes y conocidos de la civilización maya. Situado en el Petén, en la selva tropical, Tikal ofrece pirámides y templos imponentes, rodeados por una rica fauna y flora.</p>
+            <div class="imagenes">
+                <img src="https://historia.nationalgeographic.com.es/medio/2021/07/05/la-gran-plaza-de-tikal-en-la-selva-del-peten-en-guatemala_52a4308d_800x800.jpg" alt="Descripción" width="500" height="400"> 
+                <img src="https://aprende.guatemala.com/wp-content/uploads/2017/10/Webp.net-gifmaker-1-19.gif" alt="Descripción" width="500" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/NMfbca9JZFqmSNHN7')">¿Cómo llegar?</button>
             <h3 class="subtitulo">Yaxhá</h3>   
             <p class="info">Yaxhá es otro sitio arqueológico importante en Petén. Este lugar ofrece una experiencia más tranquila en comparación con Tikal, pero igualmente impresionante, con sus pirámides, plazas y hermosas vistas al Lago Yaxhá.</p>
+            <div class="imagenes">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Yaxha_von_oben.jpg" alt="Descripción" width="500" height="400"> 
+                <img src="https://www.guatemalaviajes.com/wp-content/uploads/2018/10/peten-yaxha-acropolis-norte.jpg" alt="Descripción" width="500" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/gttWPVjArFH1ouUt7')">¿Cómo llegar?</button>
         </section>
         
         <!-- Región Verapaz -->
@@ -109,8 +155,18 @@
             <p>En Guatemala, los museos y centros culturales ofrecen una inmersión en la historia, el arte y la tradición del país. Desde el Museo Nacional de Arqueología hasta el Centro Cultural de la Paz, aquí podrás aprender y conectar con la cultura guatemalteca.</p>
             <h3 class="subtitulo">Museo Nacional de Arqueología</h3>   
             <p class="info">El Museo Nacional de Arqueología y Etnología de Guatemala es uno de los más importantes del país. Alberga una amplia colección de artefactos mayas y otros vestigios históricos que permiten conocer a fondo la cultura guatemalteca.</p>
+            <div class="imagenes">
+                <img src="https://www.sicultura.gob.gt/wp-content/uploads/2019/12/maya-bueno-.jpg" alt="Descripción" width="500" height="400"> 
+                <img src="https://agn.gt/wp-content/uploads/2021/05/museo-nacional-de-arqueologia-y-etnologia-3-e1620964762774.jpg" alt="Descripción" width="500" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/4etZjt3zfhrmWrmy7')">¿Cómo llegar?</button>
             <h3 class="subtitulo">Centro Cultural de la Paz</h3>   
             <p class="info">El Centro Cultural de la Paz en Ciudad de Guatemala es un espacio dedicado a la promoción de la cultura y el arte guatemalteco. Ofrece exposiciones de arte, música, danza y literatura, permitiendo al público sumergirse en la rica herencia cultural del país.</p>
+            <div class="imagenes">
+                 
+                <img src="https://aprende.guatemala.com/wp-content/uploads/2017/03/Monumento-a-la-Paz-en-la-Ciudad-de-Guatemala.jpg" alt="Descripción" width="600" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/mYXngFULj2MATTFt8')">¿Cómo llegar?</button>
         </section>
         
         <!-- Región Sur Occidente -->
@@ -119,17 +175,49 @@
             <p>En Guatemala, los pueblos coloniales y tradicionales ofrecen un viaje en el tiempo, con calles empedradas, arquitectura antigua y costumbres que aún perduran. Desde Antigua Guatemala hasta Chichicastenango, cada pueblo es un rincón lleno de historia y encanto.</p>
             <h3 class="subtitulo">Antigua Guatemala</h3>   
             <p class="info">Antigua Guatemala es una ciudad colonial famosa por su bien conservada arquitectura barroca y su historia como antigua capital del país. Es un destino turístico muy popular, conocido por sus iglesias, plazas y calles empedradas.</p>
+            <div class="imagenes">
+                <img src="https://lugaresantigua.com/assets/images/blog/23-007-datos-arco/1.jpg" width="500" height="400"> 
+                <img src="https://www.caminorealantigua.com.gt/wp-content/uploads/2024/07/volcan.jpg" alt="Descripción" width="500" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/FsvNzAFuUjoAz5Tp8')">¿Cómo llegar?</button>
             <h3 class="subtitulo">Chichicastenango</h3>   
             <p class="info">Chichicastenango es famoso por su vibrante mercado, donde los turistas pueden encontrar artesanías, textiles, y productos tradicionales. Este pueblo es un punto de encuentro entre la cultura indígena y la colonial, lo que lo convierte en un destino único para experimentar la cultura guatemalteca.</p>
+            <div class="imagenes">
+                <img src="https://www.guatemala.com/fotos/2019/01/Mercado-de-Chichicastenango-es-uno-de-los-mas-bonitos-del-mundo-segun-Aire-Nomada.jpg" alt="Descripción" width="500" height="400"> 
+                <img src="https://i0.wp.com/www.callejeandoporelplaneta.com/wp-content/uploads/ARCO-GUCUMATZ-CHICHICASTENANGO.jpg?ssl=1" alt="Descripción" width="500" height="400"> 
+            </div>
+            <button class="btn-maps" onclick="abrirMapa('https://maps.app.goo.gl/c77nht7wuiNHN25FA')">¿Cómo llegar?</button>
+        </section>
+   
+        <!-- AQUI DEBO DE PONERLO ENMEDIO-->
+        <section id="cotizaciones">
+           
+            <h2>Cotizaciones</h2>
+            <p class="medio">Puedes ver las diferentes cotizaciones de los sitios turísticos.</p>
+            <a href="toca/coti.pdf" download="coti.pdf" class="boton-descarga">Descargar PDF</a>
+           
+              
         </section>
         
         <!-- Contactanos -->
         <section id="contactanos">
             <h2>Contáctanos</h2>
+            <div class="marquesina" id="marquesina">
+
+                ¡Déjanos tus comentarios!
+            </div>
+            </section>
             <p>En esta sección podrás encontrar los detalles de contacto para que podamos ayudarte con más información sobre tu próximo destino en Guatemala.</p>
+            <a href ="https://wa.me/58211999" target="blank"> 
             <img src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN" alt="whats" class="whats">
+               </a>
+                <a href ="https://www.facebook.com/profile.php?id=61573750886845" target="blank"> 
             <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Quetzal" class="face">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Quetzal" class="ig">
+                  </a>
+            <a href="https://www.instagram.com/rincones_chapines2507/" target="blank">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Quetzal" class="ig">
+                </a>
         <p class="subtitulo">Nuestro Correo</p>
         <form action="https://formspree.io/f/xrbennjk" method="POST">
             <label for="name">Nombre:</label>
@@ -143,42 +231,224 @@
     
             <button type="submit">Enviar</button>
         </form>
-        </section>
-        
-    </center>
+      
     </main>
+    </center>
+   
     <aside class="right-sidebar">
+        <div class="counter">
+            <h1> <center>Visitas </center></h1>
+            
+            <div class="count-display">
+                <span id="visitCount">0</span>
+            </div>
+        </div>
         <h3>Hoteles en Guatemala</h3>
         
         <!-- Primer hotel -->
         <div class="hotel">
-            <h4>Hotel Casa Santo Domingo</h4>
+            <h4>Hotel Sol y Luna</h4>
             
-            <p>Ubicado en Antigua Guatemala, un lugar histórico con hermosas vistas y excelente servicio.</p>
-            <a href="https://www.casasantodomingo.com.gt/" target="_blank">
+            <p>Un refugio ecológico ubicado en las exuberantes colinas de Guatemala, que ofrece vistas impresionantes y cocina orgánica.</p>
+            
+            <img src="https://static.motelnowapp.com/cl/images/motel/299_15_1.jpg" alt="Hotel Sol y Luna" class="whats">
+            
+            <a href="https://www.solylunahotel.com" target="_blank">
                 <button class="view-btn">Ver más</button>
             </a>
         </div>
     
         <!-- Segundo hotel -->
         <div class="hotel">
-            <h4>Hotel Barceló Guatemala City</h4>
+            <h4>Hotel Jardines del Lago</h4>
             
-            <p>Un hotel de lujo en el centro de la ciudad, ideal para negocios y turismo.</p>
-            <a href="https://www.barcelo.com/es-hn/" target="_blank">
+            <p>Un hotel sereno junto al lago con jardines tropicales, perfecto para relajarse y disfrutar de actividades al aire libre.</p>
+            <img src="https://jardinesdellago.com/wp-content/uploads/2022/08/jardines-1.jpg" alt="Hotel Jardines del Lago" class="whats">
+            <a href="https://www.jardinesdellago.com" target="_blank">
                 <button class="view-btn">Ver más</button>
             </a>
         </div>
     
         <!-- Tercer hotel -->
         <div class="hotel">
-            <h4>Hotel Vistahermosa</h4>
+            <h4>Hotel Boutique El Encanto</h4>
             
-            <p>Ubicado en la Ciudad de Guatemala, ofrece una experiencia de lujo y comodidad.</p>
-            <a href="https://www.vistahermosa.com.gt/" target="_blank">
+            <p>Un encantador hotel boutique en el corazón de la ciudad, conocido por su servicio personalizado y decoración artística.</p>
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max300/461854753.jpg?k=f2cdcf9cd0a1a6ef8dcdf57144513ed3765123f7ab6bfb48851527dc56be3e71&o=" alt="Hotel Boutique El Encanto" class="whats">
+            <a href="https://www.booking.com/hotel/mx/pequeno-encanto.es.html" target="_blank">
                 <button class="view-btn">Ver más</button>
             </a>
         </div>
+    
+        <!-- Cuarto hotel -->
+        <div class="hotel">
+            <h4>Hotel Vista Verde</h4>
+            
+            <p>Un hotel de lujo con vistas panorámicas de las montañas, que ofrece servicios de spa y gastronomía gourmet.</p>
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/116271004.jpg?k=b8ca94c309f4b0055c892af0a96f29cf0b4c3ea235d5ba4065b20975d5351525&o=" alt="Hotel Vista Verde" class="whats">
+            <a href="https://www.booking.com/hotel/gt/hostal-vista-verde-lanquin.es.html" target="_blank">
+                <button class="view-btn">Ver más</button>
+            </a>
+        </div>
+    
+        <!-- Quinto hotel -->
+        <div class="hotel">
+            <h4>Hotel La Paz</h4>
+            
+            <p>Un escape tranquilo con comodidades modernas, ubicado cerca de lugares culturales y mercados vibrantes.</p>
+            <img src="https://hotelsevencrown.com/public/img/frente_hotel_malecon-la-paz.jpg" alt="Hotel La Paz" class="whats">
+            <a href="https://www.hoteljardinlapaz.com/" target="_blank">
+                <button class="view-btn">Ver más</button>
+            </a>
+        </div>
+        <div class="hotel">
+            <h4>Hotel Paraíso Tropical</h4>
+            <p>Un oasis de tranquilidad rodeado de naturaleza, ideal para escapadas románticas y retiros de bienestar.</p>
+            <img src="https://hotelparaisotropical.com.br/wp-content/themes/hotelparaisotropical/image/about_bg.jpg" alt="Hotel Paraíso Tropical" class="whats">
+            <a href="https://www.tripadvisor.es/Hotel_Review-g292010-d17559261-Reviews-Hotel_Paraiso_Tropical-Livingston_Rio_Dulce_Izabal_Department.html" target="_blank">
+                <button class="view-btn">Ver más</button>
+            </a>
+        </div>
+    
+        <!-- Séptimo hotel -->
+        <div class="hotel">
+            <h4>Hotel Ciudad de Guatemala</h4>
+            <p>Ubicado en el corazón de la ciudad, ofrece un acceso fácil a las principales atracciones turísticas y culturales.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMtm7VVaS0ocW54cAbMUeuEJMBfVJlau9YCQ&s" alt="Hotel Ciudad de Guatemala" class="whats">
+            <a href="https://www.hotelcasaveranda.com/" target="_blank">
+                <button class="view-btn">Ver más</button>
+            </a>
+        </div>
+    
+        <!-- Octavo hotel -->
+        <div class="hotel">
+            <h4>Hotel Los Arcos</h4>
+            <p>Un hotel familiar con un ambiente acogedor, ideal para disfrutar de la cultura local y la gastronomía guatemalteca.</p>
+            <img src="https://image-tc.galaxy.tf/wijpeg-es4aaoh6rs86g9bvgav1vvbs6/1-playa-los-arcos-principal-1.jpg?width=1920" alt="Hotel Los Arcos" class="whats">
+            <a href="https://los-arcos.guatemalacity-hotels.com/es/" target="_blank">
+                <button class="view-btn">Ver más</button>
+            </a>
+        </div>
+    
+        <!-- Noveno hotel -->
+        <div class="hotel">
+            <h4>Hotel El Mirador</h4>
+            <p>Con impresionantes vistas al volcán, este hotel ofrece una experiencia única de conexión con la naturaleza.</p>
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/463715439.jpg?k=c3a3e5efc11110ec63de5d22341f42cf1d89e9cbd9db7dff24f5423d2bb2b677&o=&hp=1" alt="Hotel El Mirador" class="whats">
+            <a href="https://www.hotelelmiradorantigua.com/" target="_blank">
+                <button class="view-btn">Ver más</button>
+            </a>
+        </div>
+    
+        <!-- Décimo hotel -->
+        <div class="hotel">
+            <h4>Hotel Oasis del Lago</h4>
+            <p>Un refugio junto al lago que combina lujo y naturaleza, perfecto para actividades acuáticas y relajación.</p>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/2b/a3/1f/b7/caption.jpg" alt="Hotel Oasis del Lago" class="whats">
+            <a href="https://www.portahoteldellago.com/es" target="_blank">
+                <button class="view-btn">Ver más</button>
+            </a>
+        </div>
+    
+        <!-- Undécimo hotel -->
+        <div class="hotel">
+            <h4>Hostales Irtra</h4>
+            <p>Sumérgete en la selva guatemalteca con este hotel ecológico que ofrece aventuras y confort en un solo lugar.</p>
+            <img src="https://irtra.org.gt/wp-content/uploads/2024/06/_c5a8607-1719343783-1773591689.JPG" alt="Hotel La Selva" class="whats">
+            <a href="https://irtra.org.gt/hostales/?pid=299" target="_blank">
+                <button class="view-btn">Ver más</button>
+            </a>
+        </div>
+         <!-- Duodécimo hotel -->
+    <div class="hotel">
+        <h4>Hotel La Casa de los Abuelos</h4>
+        <p>Un acogedor hotel familiar que ofrece un ambiente cálido y hospitalario, ideal para disfrutar de la cultura local.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZiPZp95MyW78X1QZYjQeFVNpELZZ7vEyYg&s" alt="Hotel La Casa de los Abuelos" class="whats">
+        <a href="https://es.planetofhotels.com/guatemala/tecpan/casa-de-los-abuelos-hotel" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
+
+    <!-- Decimotercero hotel -->
+    <div class="hotel">
+        <h4>Hotel El Faro</h4>
+        <p>Ubicado en la costa, este hotel ofrece vistas espectaculares al océano y acceso a playas privadas.</p>
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/315451283.jpg?k=93d8956f8458d0c9f4f3f1edffc34082620cae099ee6762a62bcdc375efba3dd&o=&hp=1" alt="Hotel El Faro" class="whats">
+        <a href="https://hotelelfaro.com.gt/" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
+
+    <!-- Decimocuarto hotel -->
+    <div class="hotel">
+        <h4>Hotel La Casona</h4>
+        <p>Un hotel histórico que combina la arquitectura colonial con comodidades modernas, ubicado en el centro de la ciudad.</p>
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/339662549.jpg?k=8271a799381d3fb7efabf6ce867729400a5728fe2dbaa94a819b4db0aa456834&o=&hp=1" alt="Hotel La Casona" class="whats">
+        <a href="https://hotellacasonabeach.com-hotel.com/es/" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
+
+    <!-- Decimoquinto hotel -->
+    <div class="hotel">
+        <h4>Hotel El Jardín Secreto</h4>
+        <p>Un encantador hotel rodeado de jardines exuberantes, ideal para una escapada romántica o un retiro de bienestar.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSllXw8sgXxnG9lsQZRxLw_0YjRW5vCoSKCzQ&s" alt="Hotel El Jardín Secreto" class="whats">
+        <a href="https://es.planetofhotels.com/guatemala/solola/el-jardin-secreto" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
+
+    <!-- Decimosexto hotel -->
+    <div class="hotel">
+        <h4>Hotel La Montaña</h4>
+        <p>Un refugio de montaña que ofrece actividades al aire libre y un ambiente tranquilo, perfecto para los amantes de la naturaleza.</p>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/f5/69/30/hotel-montana.jpg?w=900&h=500&s=1" alt="Hotel La Montaña" class="whats">
+        <a href="https://www.guatemala.com/guias/pasatiempos/de-montana-hotel-con-tematica-medieval-en-tecpan/" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
+    <h3>Otros:</h3>
+    <div class="hotel">
+        <h4>Venta de Trajes Típicos</h4>
+        <p>Ofrecemos diferentes diseños de trajes típicos, volaremos tu imaginación.</p>
+        <img src="https://ropatipicaarchila.com/wp-content/uploads/2024/05/traje-tipico-de-guatemala-hupil-corte-delantal-y-faja-tamano-adulto-multiluto-negro-rojo-producto-estilo-1009-300x300.webp" class="whats">
+        <a href="https://ropatipicaarchila.com/?srsltid=AfmBOopSWTwc_lHXJ8T8tey_9XDABVEcVrpSnjxFAM4kUnlBAD5FnPBm" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
+    <div class="hotel">
+        <h4>Alfarería Antigüeña</h4>
+        <p>El sinónimo de la perfección está aquí, en nuestros productos, !ven ya¡</p>
+        <img src="https://i1.wp.com/albayzinceramica.com/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-07-at-1.51.43-PM.jpeg?fit=1024%2C1024&ssl=1" alt="Hotel La Montaña" class="whats">
+        <a href="https://topisceramica.com/" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
+    <div class="hotel">
+        <h4>Carpintería</h4>
+        <p>Un lugar lleno de magia, sueña y pide el diseño que más te guste.</p>
+        <img src="https://d39d5keehoigyv.cloudfront.net/images/upload/4582/card/644b2302305b04.05613881.jpg" alt="Hotel La Montaña" class="whats">
+        <a href="https://serviciosdeguatemala.com/servicios/carpinteria/" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
+    <div class="hotel">
+        <h4>Alquiler de Vehículos</h4>
+        <p>Somos una gran familia por todo el país dispuestos a ofrecer nuestros servicios de transporte.</p>
+        <img src="https://content.r9cdn.net/rimg/car-images/generic/40_hatchback_blue.png?width=286&height=180" alt="Hotel La Montaña" class="whats">
+        <a href="https://www.es.momondo.com/autos/Ciudad-de-Guatemala-43889?r9ck=iq&gad_source=1&gclid=CjwKCAiArKW-BhAzEiwAZhWsINjXL4_RpCQ6aTtyWT86gmlbMWVVD2q5PqHQ3aA7UumItHEskHkvtBoCGf0QAvD_BwE" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
+    <div class="hotel">
+        <h4>Hospital Herrera Llerandi</h4>
+        <p>El ritmo cardíaco elevado puede ser síntomas de estar enamorado, pero es mejor salir de dudas, ¡asi que ven y haz tu cita ahora mismo!</p>
+        <img src="https://herrerallerandi.com/wp-content/uploads/2024/10/13_Herrera_Central_Guatemala-1.png" alt="Hotel La Montaña" class="whats">
+        <a href="https://herrerallerandi.com/" target="_blank">
+            <button class="view-btn">Ver más</button>
+        </a>
+    </div>
     </aside>
     
       <script src="script.js">  </script>
